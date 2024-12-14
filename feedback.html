@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share your feedback with EMMARALD Healthcare. Your input helps us improve our healthcare solutions.">
+    <title>Feedback - EMMARALD Healthcare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="logo.png" alt="EMMARALD Healthcare Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Our Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="feedback">
+            <h1>We Value Your Feedback</h1>
+            <p>Your feedback is important to us and helps us improve our services and healthcare solutions. Please take a moment to share your thoughts with us.</p>
+
+            <div class="feedback-form">
+                <h2>Provide Your Feedback</h2>
+                <form action="submit_feedback.php" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="feedback">Your Feedback</label>
+                    <textarea id="feedback" name="feedback" rows="6" required></textarea>
+
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+
+            <div class="thank-you">
+                <h2>Thank You for Your Feedback!</h2>
+                <p>We appreciate you taking the time to provide your thoughts. Your feedback helps us to continue delivering excellent healthcare solutions.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 EMMARALD Healthcare. All Rights Reserved.</p>
+            <a href="mailto:info@emmaraldhealthcare.com">Contact via Email</a>
+        </div>
+    </footer>
+</body>
+</html>

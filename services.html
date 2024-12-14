@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the innovative healthcare services provided by EMMARALD Healthcare.">
+    <title>Our Services - EMMARALD Healthcare</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // JavaScript for form validation on feedback form
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const feedback = document.getElementById('feedback').value;
+
+                if (!name || !email || !feedback) {
+                    alert("Please fill out all fields.");
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="logo.png" alt="EMMARALD Healthcare Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Our Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Our Services</h2>
+            <p>We provide a wide range of healthcare services designed to meet the needs of our clients.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Telemedicine Consultation</td>
+                        <td>Remote consultations with healthcare professionals.</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>AI-Powered Diagnostics</td>
+                        <td>AI-powered health data analysis for early detection.</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>EHR System Implementation</td>
+                        <td>Custom Electronic Health Records system development.</td>
+                        <td>$500</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Learn more about the latest trends in healthcare technology <a href="https://www.healthcareitnews.com/" target="_blank">here</a>.</p>
+
+            <!-- Feedback form -->
+            <section class="feedback">
+                <h3>Give Us Your Feedback</h3>
+                <form id="feedbackForm" action="submit_feedback.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" required></textarea><br><br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 EMMARALD Healthcare. All Rights Reserved.</p>
+            <a href="mailto:info@emmaraldhealthcare.com">Contact via Email</a>
+        </div>
+    </footer>
+</body>
+</html>

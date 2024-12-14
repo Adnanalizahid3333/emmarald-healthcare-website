@@ -1,0 +1,104 @@
+ General Reset 
+body, h1, h2, p, ul, li {
+    margin 0;
+    padding 0;
+    box-sizing border-box;
+}
+
+ Body Styling 
+body {
+    font-family Arial, sans-serif;
+    line-height 1.6;
+    color #333;
+    background-color #f4f4f4;
+}
+
+ Header Styling 
+header {
+    background #00796b;
+    color white;
+    padding 10px 20px;
+}
+
+header .banner {
+    display flex;
+    align-items center;
+    justify-content space-between;
+}
+
+header img {
+    max-height 50px;
+}
+
+header nav ul {
+    list-style none;
+    display flex;
+    gap 15px;
+}
+
+header nav ul li a {
+    text-decoration none;
+    color white;
+    font-weight bold;
+}
+
+ Intro Section 
+.intro {
+    background #e0f2f1;
+    padding 20px;
+    text-align center;
+}
+
+.intro h1 {
+    color #004d40;
+}
+
+.intro p {
+    margin-top 10px;
+    font-size 18px;
+}
+
+ Features Section 
+.features {
+    background #ffffff;
+    padding 20px;
+    margin 20px auto;
+    max-width 800px;
+}
+
+.features h2 {
+    color #00796b;
+    text-align center;
+    margin-bottom 15px;
+}
+
+.features ul {
+    list-style disc inside;
+}
+
+ Gallery Section 
+.gallery {
+    display flex;
+    justify-content center;
+    gap 10px;
+    margin-top 15px;
+}
+
+.gallery img {
+    width 200px;
+    height auto;
+    border-radius 8px;
+}
+
+ Footer 
+footer {
+    background #004d40;
+    color white;
+    text-align center;
+    padding 10px 0;
+}
+
+footer a {
+    color #80cbc4;
+    text-decoration none;
+}
